@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').mouseover(function(){
+            $('#btn').attr({'type':'text','value':'I am a text box'})
+            $('#btn').mouseout(function(){
+            $('#btn').attr({'type':'button','value':'I am a button'})
+            })
+        })
+       
+        })
+    </script>
+</head>
+<body>
+    <input type="button" value="I am a button" id="btn">
+</body>
+</html>

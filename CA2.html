@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MergeSort</title>
+    <link rel="stylesheet" href="CSS/CA2.css">
+    <script src="JS/CA2.js"></script>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    
+</head>
+<body class="body">
+
+    <center>
+    <h2 class="title">
+        <span class="title-word title-word-1">3</span>
+        <span class="title-word title-word-4">-</span>
+        <span class="title-word title-word-2">WAY</span>
+        <span class="title-word title-word-3">MERGE</span>
+        <span class="title-word title-word-4">SORT</span>
+      </h2>
+      <div class="inst">
+        <center><u><p class="zz">Instructions</p></u></center>
+        <p class="x">Step 1: Enter a number in "Enter Value" Input field One-by-One</p>
+        <p class="y">Step 2: Press "Insert Value" after entering number</p>
+        <p class="z">Step 3: Press "Sort" to sort the Array</p>
+    </div>
+    </center>
+    
+    <div class="container">
+    
+    <input required id="a" placeholder="Enter Value" class="first" ><br><br>
+    <button onclick="add()" id="submited">Insert Value</button>
+    <h3 id="demo1"></h3>
+    <button onclick="doit()" id="sortit">Sort</button>
+    <h3 id="demo2"></h3>
+    <button class="glow-on-hover" type="button" onClick="history.go()"><b>Reset</b></button>
+    </div>       
+     
+    <!-- Enter Key Press  -->
+    <script>
+         $("#a").keypress(function(event) {
+        if (event.keyCode === 13) {
+            $("#submited").click();
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+button{
+position: fixed;
+}
+img{
+    width: 300px;
+    border: 50px;
+}
+
+</style>
+</head>
+<body>
+<img name="slide" src>
+
+
+<script>
+var i=0;
+var images=Array();
+images[0]='bg.jpg';
+images[1]='cybrer.jpg';
+images[2]='lol.png';
+images[3]='lor.jpg';
+
+function changeImage()
+{
+document.slide.src=images[i];
+if(i<images.length-1)
+{
+i++;
+}
+else
+{
+i=0;
+}
+setTimeout(changeImage,1000);
+
+}
+ 
+changeImage();
+</script>
+
+</body>
+</html>

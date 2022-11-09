@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .im{
+            border-style: solid;
+            border-color: brown;
+            border-width: 20px;
+            width: 1000px;
+            height: 500px;
+            opacity: %;
+        }
+        input:hover{
+            opacity: 50%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="image" src="cybrer.jpg" alt="sry! :(" height="100px" width="100px"/>
+    
+    <script>
+        $(document).ready(function(){
+            $('input').click(function(){
+                $('input').toggleClass('im')
+                
+            })
+
+        })
+    </script>
+</body>
+</html>

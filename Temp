@@ -1,0 +1,40 @@
+var n = window.prompt("Enter the number : ")
+    let data = [];
+    
+    for(let i=0; i<n; i ++){
+        data[i]=prompt("Enter array Value " + (i+1) + ":")
+    }
+
+    document.write('<h1 id="fix" style="text-align: center;">'+"Entered Array:"+'</h1>');
+    for (let i = 0; i <n ; i++)
+    {
+        document.write('<h2 id="arr" style="text-align:center";  flex-direction:"row"; display:"block";> '+data[i]+'</h1>');
+    }
+    
+    mergeSort3Way(data,n);
+    
+    document.write('<h1 id="fix" style="text-align: center;">'+"After 3-way merge sort:"+'</h1>');
+    for (let i = 0; i <n ; i++)
+    {
+        document.write('<h2 id="arr" style="text-align: center;">'+data[i]+'</h2>');
+    }
+    
+    <style>
+        #arr{
+            size: 24px;
+            color: green;
+            font-style: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #demo1 {
+            animation: color-change 5s infinite;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    @keyframes color-change {
+     0% { color: red; }
+     12.5% { color: yellowgreen; }
+     25% { color: green; }
+     50% { color: blue; }
+    100% { color: red; }
+    }
+    </style>
